@@ -17,7 +17,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BoundedUIX</RootNamespace>
     <AssemblyName>BoundedUIX</AssemblyName>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latestMajor</LangVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -56,22 +56,21 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="FrooxEngine" Publicize="true">
-      <HintPath>$(ResonitePath)\Resonite_Data\Managed\FrooxEngine.dll</HintPath>
+      <HintPath>$(ResonitePath)\FrooxEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Elements.Core">
-      <HintPath>$(ResonitePath)\Resonite_Data\Managed\Elements.Core.dll</HintPath>
+      <HintPath>$(ResonitePath)\Elements.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>$(ResonitePath)\Resonite_Data\Managed\System.ValueTuple.dll</HintPath>
+    <Reference Include="Renderite.Shared">
+      <HintPath>$(ResonitePath)\Renderite.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ResoniteModLoader">
       <HintPath>$(ResonitePath)\Libraries\ResoniteModLoader.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(CopyToLibraries)'=='true'">
